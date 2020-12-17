@@ -12,5 +12,11 @@ pipeline {
       }
     }
 
+    stage('Probar') {
+      steps {
+        sh 'python3 -m unittest discover -v'
+      }
+    }
+
   }
 }
